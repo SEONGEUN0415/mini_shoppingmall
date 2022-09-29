@@ -42,27 +42,67 @@ button{
 
 #category {
   display: flex;
-  justify-content: center;
-  width: auto;
+  justify-content: space-between;
   height: 100px;
 }
+
 #category img{
   width: 80px;
   height: 80px;
   line-height: 90px;
-}
-.color{
   
-  margin: 12px;
+}
+
+.type{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: end;
+  
+  
+  
+
+}
+
+.type img {
+  margin: 0 4px;
+}
+
+
+
+.type__blue{
+  position: absolute;
+  cursor: pointer
+}
+
+.type__yellow{
+  position: absolute;
+  cursor: pointer;
+}
+  
+.type__pink{
+  position: absolute;
+  cursor: pointer;
+}
+
+.color{
+  display: flex;
+  flex-basis: 50%;
+  justify-content:flex-start;
+  
+  
+  
+  
 }
 .color button{
   width: 100px;
   height: 60px;
+  margin: 4px;
   border-radius: 6px;
   cursor: pointer;
   border: none;
   font-weight: var(--weight-semi-bold);
   font-size: var(--weight-regular);
+  
 }
 .color__blue{
   background-color: var(--color-blue);
@@ -74,14 +114,16 @@ button{
   background-color: var(--color-pink);
 }
 
-.item
- {
-  width:500px;
+
+.item{
+
+  width:50%;
   border-radius: 4px;
   background-color: var(--color-white);
   font-size: var(--font-regular);
   margin: 8px auto;
   line-height: 80.67px;
+
 
 }
 .item {
